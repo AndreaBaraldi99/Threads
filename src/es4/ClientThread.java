@@ -10,7 +10,7 @@ public class ClientThread implements Runnable{
     
     public static void main(String[] args){
         try {
-            Thread[] threads = new Thread[3];
+            Thread[] threads = new Thread[10];
             for(int i = 0; i < threads.length; i++){
                 String name = "t" + i;
                 threads[i] = new Thread(new ClientThread(), name);
